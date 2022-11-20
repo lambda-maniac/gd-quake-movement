@@ -9,10 +9,9 @@ const MAX_AIR_ACCELERATION := 6400 / GD_SOURCE_RATIO
 const FRICTION             := 0.9  / GD_SOURCE_RATIO
 const GRAVITY              := 0 # Testing Air strafes # 180  / GD_SOURCE_RATIO
 
-onready var head              := $Head
-var         sensitivity       := 0.25
-var         desired_direction := Vector3.ZERO
-var         velocity          := Vector3.ZERO
+var sensitivity       := 0.25
+var desired_direction := Vector3.ZERO
+var velocity          := Vector3.ZERO
 
 func _physics_process(delta_time):
 
